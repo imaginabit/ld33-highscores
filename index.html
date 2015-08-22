@@ -1,0 +1,45 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+  <script src="parse_key.js"></script>
+  <script src="functions.js"></script>
+</head>
+<body>
+  <script type="text/javascript">
+    var GameScore = Parse.Object.extend("GameScore");
+    var gamescore = new GameScore();
+
+    // gamescore.save({
+    //     playername: Math.random().toString(36).substring(7),
+    //     score: Math.floor(Math.random()* 1000) },{
+    //     success: function(object) {
+    //         $(".success").append("score guardado ");
+    //         $(".success").show();
+    //         alert('New object created with objectId: ' + object.id);
+    //     },
+    //     error: function(model, error) {
+    //       $(".error").show();
+    //     }
+    // });
+
+function sendscore(name,score,icecream,detroyed) {
+    var GameScore = Parse.Object.extend("GameScore");
+    var gamescore = new GameScore();
+
+    gamescore.save({
+        playername: Math.random().toString(36).substring(7),
+        score: Math.floor(Math.random()* 1000) },{
+        success: function(object) {
+            $("body").html("success");
+        },
+        error: function(model, error) {
+            $("body").html("error");
+        }
+    });
+}
+  </script>
+</body>
+
+</html>

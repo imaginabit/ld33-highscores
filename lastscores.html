@@ -1,0 +1,88 @@
+<!doctype html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>My Parse App</title>
+  <meta name="description" content="My Parse App">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="parse_key.js"></script>
+  <script src="functions.js"></script>
+
+</head>
+
+<body>
+
+  <div id="main">
+      <h1 id='title'>Scores</h1>
+      <table id='scores' class="table">
+          <thead>
+              <th>
+                  name
+              </th>
+              <th>
+                  score
+              </th>
+              <th>
+                  ice cream
+              </th>
+              <th>
+                  destroyed
+              </th>
+          </thead>
+
+      </table>
+  </div>
+
+  <script type="text/javascript">
+
+    var GameScore = Parse.Object.extend("GameScore");
+    var query = new Parse.Query(GameScore);
+
+    if (playername = $.urlParam('playername')){
+        query.equalTo("playername", playername );
+    }
+
+    query.descending("createdAt");
+    if ( $.urlParam('top')){
+        query.descending("score");
+    }
+
+    query.limit(10);
+
+    query.find({
+      success: function(scores) {
+        for (var i = 0; i < scores.length; i++) {
+          var score = scores[i];
+          var row = $('<tr>');
+          row.append('<td>' + score.get("playername") + '</td>');
+          row.append('<td>' + score.get("score") + '</td>');
+          row.append('<td>' + score.get("icecream") + '</td>');
+          row.append('<td>' + score.get("destroyed")  + '</td>');
+
+          $('#scores').append(row);
+          $('#title').html("Last Scores");
+          if(playername){
+            $('#title').html("Last Scores for"+ playername);
+          }
+          if ( $.urlParam('top')) {
+            $('#title').html("Top Scores");
+          }
+        }
+      },
+      error: function(object, error) {
+        $('#title').append("Error al obtener datos");
+      }
+    });
+  </script>
+</body>
+
+</html>
