@@ -32,7 +32,6 @@ Parse.Cloud.afterSave("GameScore", function(request) {
     }
 });
 
-
 function addTotal(
         lastIcecream,icecream,
         lastDestroyed,destroyed,

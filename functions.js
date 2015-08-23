@@ -55,3 +55,25 @@ function getLastGameScoreAndSum(icecream,destroyed,score) {
         }
     });
 }
+
+function printScore(targetid,scores) {
+    for (var i = 0; i < scores.length; i++) {
+      var score = scores[i];
+      var row = $('<tr>');
+      row.append('<td>' + score.get("playername") + '</td>');
+      row.append('<td>' + score.get("score") + '</td>');
+      row.append('<td>' + score.get("icecream") + '</td>');
+      row.append('<td>' + score.get("destroyed")  + '</td>');
+      $(targetid).append(row);
+    }
+}
+function getScoresPrint(query,targetid) {
+    query.find({
+      success: function(scores) {
+          printScore(targetid,scores)
+      },
+      error: function(object, error) {
+        $('#title').append("Error al obtener datos");
+      }
+    });
+}
