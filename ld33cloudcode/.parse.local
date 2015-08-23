@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "_default": {
+      "link": "ld33hscores"
+    },
+    "ld33hscores": {
+      "applicationId": "Vz8t62Nh4003qMWIfJL7ORRRwWXtMVJtWBbOrxJ5"
+    }
+  }
+}

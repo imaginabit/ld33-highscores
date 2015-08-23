@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
 
-  <title>My Parse App</title>
-  <meta name="description" content="My Parse App">
+  <title>Game Scores</title>
+  <meta name="description" content="High Scores">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -25,25 +25,18 @@
       <h1 id='title'>Scores</h1>
       <table id='scores' class="table">
           <thead>
-              <th>
-                  name
-              </th>
-              <th>
-                  score
-              </th>
-              <th>
-                  ice cream
-              </th>
-              <th>
-                  destroyed
-              </th>
-          </thead>
-
+              <th>name</th>
+              <th>score</th>
+              <th>ice cream</th>
+              <th>destroyed</th>
+          </thead>
       </table>
+      <div class="btn btn-default total">Total Ice Cream <span id='totalIceCream'></span></div>
+      <div id="totalDestroyedBox" class="btn btn-default total" >Total destroyed <span id='totalDestroyed'></span></div>
+
   </div>
 
   <script type="text/javascript">
-
     var GameScore = Parse.Object.extend("GameScore");
     var query = new Parse.Query(GameScore);
 
@@ -54,10 +47,10 @@
     query.descending("createdAt");
     if ( $.urlParam('top')){
         query.descending("score");
+        //parse no tiene un uniqueee para los queries IAIaoeuhantoeuh
     }
 
     query.limit(10);
-
     query.find({
       success: function(scores) {
         for (var i = 0; i < scores.length; i++) {
@@ -82,6 +75,29 @@
         $('#title').append("Error al obtener datos");
       }
     });
+
+    var total = Parse.Object.extend("Total");
+    var totalq = new Parse.Query(total);
+    totalq.descending("createdAt");
+
+
+    totalq.find({
+      success: function(totales) {
+        lastTotal = totales[0];
+        icecream = lastTotal.get('icecream');
+        destroyed = lastTotal.get('destroyed');
+        // score = lastTotal.get('score');
+        $("#totalIceCream").html(icecream);
+        $("#totalDestroyed").html(destroyed);
+      },
+      error: function(error) {
+          $("#totalIceCream").html(error);
+          console.log(error);
+      }
+    });
+
+
+
   </script>
 </body>
 

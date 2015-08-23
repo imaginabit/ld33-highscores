@@ -1,15 +1,42 @@
-$.urlParam = function(name){
-    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-    if (results==null){
-       return null;
-    }
-    else{
-       return results[1] || 0;
-    }
-}
+//
+// Parse.Cloud.define("totalIceCream", function(request, response) {
+//   // query.equalTo("playername", request.params.playername);
+//   var query = new Parse.Query("GameScore");
+//   query.limit(1000);
+//   query.find({
+//     success: function(results) {
+//       var sum = 0;
+//       for (var i = 0; i < results.length; ++i) {
+//         sum += results[i].get("icecream");
+//       }
+//       response.success(sum);
+//     },
+//     error: function() {
+//       response.error("lookup failed");
+//     }
+//   });
+// });
 
 
-function addTotal(lastIcecream,icecream,lastDestroyed,destroyed,lastScore,score) {
+Parse.Cloud.afterSave("GameScore", function(request) {
+    if (request.object.get("icecream") > 0 ||
+          request.object.get("destroyed") > 0 ||
+          request.object.get("score") > 0) {
+
+      // get last row data
+      var icecream = request.object.get("icecream");
+      var destroyed = request.object.get("destroyed");
+      var score = request.object.get("score");
+
+      getLastGameScoreAndSum(icecream,destroyed,score);
+    }
+});
+
+
+function addTotal(
+        lastIcecream,icecream,
+        lastDestroyed,destroyed,
+        lastScore,score) {
     var Total = Parse.Object.extend("Total");
     var total = new Total();
 

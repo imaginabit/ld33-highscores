@@ -4,16 +4,17 @@
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
   <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
   <script src="parse_key.js"></script>
-  <script src="functions.js"></script>
+  <script src="unctions.js"></script>
+  <script src="sendscore.js"></script>
 </head>
 <body>
   <script type="text/javascript">
-    var GameScore = Parse.Object.extend("GameScore");
-    var gamescore = new GameScore();
-
+    // var GameScore = Parse.Object.extend("GameScore");
+    // var gamescore = new GameScore();
+    //
     // gamescore.save({
-    //     playername: Math.random().toString(36).substring(7),
-    //     score: Math.floor(Math.random()* 1000) },{
+    //     playername: ,
+    //     score: },{
     //     success: function(object) {
     //         $(".success").append("score guardado ");
     //         $(".success").show();
@@ -24,21 +25,74 @@
     //     }
     // });
 
-function sendscore(name,score,icecream,detroyed) {
-    var GameScore = Parse.Object.extend("GameScore");
-    var gamescore = new GameScore();
 
-    gamescore.save({
-        playername: Math.random().toString(36).substring(7),
-        score: Math.floor(Math.random()* 1000) },{
-        success: function(object) {
-            $("body").html("success");
-        },
-        error: function(model, error) {
-            $("body").html("error");
-        }
-    });
-}
+    function addTotal(
+            lastIcecream,icecream,
+            lastDestroyed,destroyed,
+            lastScore,score) {
+        var Total = Parse.Object.extend("Total");
+        var total = new Total();
+
+        total.save(
+        {
+            score: lastScore + score ,
+            icecream: lastIcecream + icecream,
+            destroyed: lastDestroyed + destroyed
+        },{
+            success: function(object) {
+                resp = [lastIcecream, icecream];
+                $("body").html("success " + lastIcecream + ' ' +icecream);
+            },
+            error: function(model, error) {
+                $("body").html("error");
+            }
+        });
+    }
+
+    function getLastGameScoreAndSum(icecream,destroyed,score) {
+        var Total = Parse.Object.extend("Total");
+        var query = new Parse.Query(Total);
+        query.descending("createdAt");
+        var lastIcecream = 0;
+        var lastDestroyed = 0;
+        var lastScore = 0;
+
+        query.find({
+            success: function(o) {
+                var first = o[0];
+                if (first !== undefined){
+                    lastIcecream = first.get('icecream');
+                    lastDestroyed = first.get('destroyed');
+                    lastScore = first.get('score');
+                }
+                // $("body").append("success " + ' ' + lastIcecream + ' ' +  lastDestroyed  + ' ' + lastScore);
+                addTotal(
+                    lastIcecream, icecream,
+                    lastDestroyed, destroyed,
+                    lastScore, score
+                );
+
+            }
+        });
+    }
+
+
+    //playername, score , icecream, destroyed
+    nombres = ['Fernando', 'Miguel','Luca','Daniela','Esteban','player1','player2','player3','player4','player5','player6'];
+
+    var i = 0;
+    while (i<1) {
+        nombre = nombres[Math.floor(Math.random()*10)] ;
+        score = Math.floor(Math.random()* 100);
+        icecream = Math.floor(Math.random()* 100);
+        destroyed = Math.floor(Math.random()* 100);
+        sendscore(nombre,score,icecream,destroyed);
+        getLastGameScoreAndSum(icecream,destroyed,score);
+        $('body').append('<p> added ' + nombre +' '+ score +' ' + icecream+' ' +destroyed+ '</p>');
+        i++;
+    }
+
+
   </script>
 </body>
 
