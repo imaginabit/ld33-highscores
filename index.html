@@ -1,0 +1,232 @@
+<!doctype html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game Scores</title>
+  <meta name="description" content="High Scores">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="parse_key.js"></script>
+  <script src="functions.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#tscore" role="tab" data-toggle="tab">Top Score</a></li>
+          <li role="presentation"><a href="#ticecream" role="tab" data-toggle="tab">Top Ice Creams</a></li>
+          <li role="presentation"><a href="#tdestroyed" role="tab" data-toggle="tab">Top Destruction</a></li>
+          <li role="presentation"><a href="#tlast" role="tab" data-toggle="tab">Last Scores</a></li>
+        </ul>
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="tscore">
+            <table id='scores' class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Player Name</th>
+                  <th>Score</th>
+                  <th>Ice cream</th>
+                  <th>Destroyed</th>
+                </tr>
+              </thead>
+            </table>
+            <div id="yourScore" style="display:none">
+              <h3>Your Score</h3>
+              <table id='yours' class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Player Name</th>
+                    <th>Score</th>
+                    <th>Ice cream</th>
+                    <th>Destroyed</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="ticecream">
+            <table id='icecreamScores' class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Player Name</th>
+                  <th>Score</th>
+                  <th>Ice cream</th>
+                  <th>Destroyed</th>
+                </tr>
+              </thead>
+            </table>
+            <div id="yourIcecreamScore" style="display:none">
+              <h3>Your Score</h3>
+              <table id='yoursIcecream' class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Player Name</th>
+                    <th>Score</th>
+                    <th>Ice cream</th>
+                    <th>Destroyed</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="tdestroyed">
+            <table id='destroyScores' class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Player Name</th>
+                  <th>Score</th>
+                  <th>Ice cream</th>
+                  <th>Destroyed</th>
+                </tr>
+              </thead>
+            </table>
+            <div id="yourDestroyedScore" style="display:none">
+              <h3>Your Score</h3>
+              <table id='yoursDestroyed' class="table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Player Name</th>
+                    <th>Score</th>
+                    <th>Ice cream</th>
+                    <th>Destroyed</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="tlast">
+            <table id='lastScores' class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Player Name</th>
+                  <th>Score</th>
+                  <th>Ice cream</th>
+                  <th>Destroyed</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Columna Estrecha con el logo y tal -->
+      <div class="col-md-4 lateral">
+        <div class="logo">
+          <img src="logo.png">
+        </div>
+        <div class="row" style="margin-top:1em">
+          <div class="col-md-6 col-xs-6">
+            <a href="http://risingpixel.itch.io/notzilla-icecream-vendor" class="btn btn-default">Play!</a>
+          </div>
+          <div class="col-md-6 col-xs-6">
+            <a href="https://twitter.com/intent/tweet?text=play%20Notzilla%20Ice%20Cream%20vendor!&url=http%3A%2F%2Frisingpixel.itch.io%2Fnotzilla-icecream-vendor" class="btn btn-default">Share on Twitter!</a>
+          </div>
+        </div>
+        <div class="row" style="margin:1em 0 1em">
+          <div class="col-md-6 col-xs-6">
+            <div class="btn btn-default total">Total Ice Cream
+              <span id='totalIceCream'></span>
+            </div>
+          </div>
+          <div class="col-md-6 col-xs-6">
+            <div id="totalDestroyedBox" class="btn btn-default total">Total destroyed
+              <span id='totalDestroyed'></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var GameScore = Parse.Object.extend("GameScore");
+
+
+    var query = new Parse.Query(GameScore);
+    query.descending("score");
+    query.limit(10);
+    gScoresPrintH(query, '#scores');
+
+    var ql = new Parse.Query(GameScore);
+    ql.descending("createdAt");
+    ql.limit(10);
+    gScoresPrintH(ql, '#lastScores');
+
+    var qic = new Parse.Query(GameScore);
+    qic.descending("icecream");
+    qic.limit(10);
+    gScoresPrintH(qic, '#icecreamScores');
+
+    var qd = new Parse.Query(GameScore);
+    qd.descending("destroyed");
+    qd.limit(10);
+    gScoresPrintH(qd, '#destroyScores');
+
+    var total = Parse.Object.extend("Total");
+    var totalq = new Parse.Query(total);
+    totalq.descending("createdAt");
+    totalq.find({
+      success: function(totales) {
+        lastTotal = totales[0];
+        icecream = lastTotal.get('icecream');
+        destroyed = lastTotal.get('destroyed');
+        // score = lastTotal.get('score');
+        $("#totalIceCream").html(icecream);
+        $("#totalDestroyed").html(destroyed);
+      },
+      error: function(error) {
+        $("#totalIceCream").html(error);
+        console.log(error);
+      }
+    });
+
+    if (id = $.urlParam('id')) {
+      $("#scores > tr").each(function( i ){
+        console.log( i + '. class: '+ $(this).attr("class") )
+      });
+      getRankingData(id);
+      getRankingData(id,"icecream");
+      getRankingData(id,"destroyed");
+    }
+  </script>
+</body>
+
+</html>

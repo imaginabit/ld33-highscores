@@ -1,0 +1,153 @@
+urlParam	/home/fer/Downloads/ld33-highscores/functions.js	/^$.urlParam = function(name){$/;"	function	line:1
+$.urlParam	/home/fer/Downloads/ld33-highscores/functions.js	/^$.urlParam = function(name){$/;"	function	line:0
+addTotal	/home/fer/Downloads/ld33-highscores/functions.js	/^function addTotal(lastIcecream,icecream,lastDestroyed,destroyed,lastScore,score) {$/;"	function	line:12
+success	/home/fer/Downloads/ld33-highscores/functions.js	/^        success: function(object) {$/;"	function	line:22
+error	/home/fer/Downloads/ld33-highscores/functions.js	/^        error: function(model, error) {$/;"	function	line:26
+addTotal	/home/fer/Downloads/ld33-highscores/functions.js	/^function addTotal(lastIcecream,icecream,lastDestroyed,destroyed,lastScore,score) {$/;"	function	line:12
+getLastGameScoreAndSum	/home/fer/Downloads/ld33-highscores/functions.js	/^function getLastGameScoreAndSum(icecream,destroyed,score) {$/;"	function	line:32
+success	/home/fer/Downloads/ld33-highscores/functions.js	/^        success: function(o) {$/;"	function	line:41
+getLastGameScoreAndSum	/home/fer/Downloads/ld33-highscores/functions.js	/^function getLastGameScoreAndSum(icecream,destroyed,score) {$/;"	function	line:32
+printScore	/home/fer/Downloads/ld33-highscores/functions.js	/^function printScore(targetid,scores) {$/;"	function	line:59
+printScore	/home/fer/Downloads/ld33-highscores/functions.js	/^function printScore(targetid,scores) {$/;"	function	line:59
+printRanking	/home/fer/Downloads/ld33-highscores/functions.js	/^function printRanking(targetid,scores) {$/;"	function	line:74
+printRanking	/home/fer/Downloads/ld33-highscores/functions.js	/^function printRanking(targetid,scores) {$/;"	function	line:74
+getScoresPrint	/home/fer/Downloads/ld33-highscores/functions.js	/^function getScoresPrint(query,targetid) {$/;"	function	line:88
+success	/home/fer/Downloads/ld33-highscores/functions.js	/^      success: function(scores) {$/;"	function	line:90
+error	/home/fer/Downloads/ld33-highscores/functions.js	/^      error: function(object, error) {$/;"	function	line:93
+getScoresPrint	/home/fer/Downloads/ld33-highscores/functions.js	/^function getScoresPrint(query,targetid) {$/;"	function	line:88
+gScoresPrintH	/home/fer/Downloads/ld33-highscores/functions.js	/^function gScoresPrintH(query,targetid) {$/;"	function	line:99
+success	/home/fer/Downloads/ld33-highscores/functions.js	/^      success: function(scores) {$/;"	function	line:101
+error	/home/fer/Downloads/ld33-highscores/functions.js	/^      error: function(object, error) {$/;"	function	line:106
+gScoresPrintH	/home/fer/Downloads/ld33-highscores/functions.js	/^function gScoresPrintH(query,targetid) {$/;"	function	line:99
+getRankingData	/home/fer/Downloads/ld33-highscores/functions.js	/^\/\/ function getRankingData(scoreid) {$/;"	function	line:113
+getRankingData	/home/fer/Downloads/ld33-highscores/functions.js	/^function getRankingData(scoreid,type) {$/;"	function	line:151
+success	/home/fer/Downloads/ld33-highscores/functions.js	/^    success: function(results) {$/;"	function	line:167
+error	/home/fer/Downloads/ld33-highscores/functions.js	/^    error: function() {$/;"	function	line:191
+getRankingData	/home/fer/Downloads/ld33-highscores/functions.js	/^function getRankingData(scoreid,type) {$/;"	function	line:151
+loadRanking	/home/fer/Downloads/ld33-highscores/functions.js	/^\/\/ function loadRanking(data) {$/;"	function	line:197
+capFirst	/home/fer/Downloads/ld33-highscores/functions.js	/^function capFirst(string) {$/;"	function	line:226
+capFirst	/home/fer/Downloads/ld33-highscores/functions.js	/^function capFirst(string) {$/;"	function	line:226
+loadRanking	/home/fer/Downloads/ld33-highscores/functions.js	/^function loadRanking(data,type) {$/;"	function	line:230
+loadRanking	/home/fer/Downloads/ld33-highscores/functions.js	/^function loadRanking(data,type) {$/;"	function	line:230
+head	/home/fer/Downloads/ld33-highscores/index.html	/^<head>$/;"	function	line:3
+meta	/home/fer/Downloads/ld33-highscores/index.html	/^  <meta charset="utf-8">$/;"	function	line:4
+meta	/home/fer/Downloads/ld33-highscores/index.html	/^  <meta http-equiv="X-UA-Compatible" content="IE=edge">$/;"	function	line:5
+meta	/home/fer/Downloads/ld33-highscores/index.html	/^  <meta name="viewport" content="width=device-width, initial-scale=1">$/;"	function	line:6
+title	/home/fer/Downloads/ld33-highscores/index.html	/^  <title>Game Scores<\/title>$/;"	function	line:7
+meta	/home/fer/Downloads/ld33-highscores/index.html	/^  <meta name="description" content="High Scores">$/;"	function	line:8
+link	/home/fer/Downloads/ld33-highscores/index.html	/^  <link rel="apple-touch-icon" sizes="57x57" href=".\/apple-icon-57x57.png">$/;"	function	line:10
+link	/home/fer/Downloads/ld33-highscores/index.html	/^  <link rel="apple-touch-icon" sizes="60x60" href=".\/apple-icon-60x60.png">$/;"	function	line:11
+link	/home/fer/Downloads/ld33-highscores/index.html	/^  <link rel="apple-touch-icon" sizes="72x72" href=".\/apple-icon-72x72.png">$/;"	function	line:12
+link	/home/fer/Downloads/ld33-highscores/index.html	/^  <link rel="apple-touch-icon" sizes="76x76" href=".\/apple-icon-76x76.png">$/;"	function	line:13
+link	/home/fer/Downloads/ld33-highscores/index.html	/^  <link rel="apple-touch-icon" sizes="114x114" href=".\/apple-icon-114x114.png">$/;"	function	line:14
+link	/home/fer/Downloads/ld33-highscores/index.html	/^  <link rel="apple-touch-icon" sizes="120x120" href=".\/apple-icon-120x120.png">$/;"	function	line:15
+link	/home/fer/Downloads/ld33-highscores/index.html	/^  <link rel="apple-touch-icon" sizes="144x144" href=".\/apple-icon-144x144.png">$/;"	function	line:16
+link	/home/fer/Downloads/ld33-highscores/index.html	/^  <link rel="apple-touch-icon" sizes="152x152" href=".\/apple-icon-152x152.png">$/;"	function	line:17
+link	/home/fer/Downloads/ld33-highscores/index.html	/^  <link rel="apple-touch-icon" sizes="180x180" href=".\/apple-icon-180x180.png">$/;"	function	line:18
+link	/home/fer/Downloads/ld33-highscores/index.html	/^  <link rel="icon" type="image\/png" sizes="192x192" href=".\/android-icon-192x192.png">$/;"	function	line:19
+link	/home/fer/Downloads/ld33-highscores/index.html	/^  <link rel="icon" type="image\/png" sizes="32x32" href=".\/favicon-32x32.png">$/;"	function	line:20
+link	/home/fer/Downloads/ld33-highscores/index.html	/^  <link rel="icon" type="image\/png" sizes="96x96" href=".\/favicon-96x96.png">$/;"	function	line:21
+link	/home/fer/Downloads/ld33-highscores/index.html	/^  <link rel="icon" type="image\/png" sizes="16x16" href=".\/favicon-16x16.png">$/;"	function	line:22
+link	/home/fer/Downloads/ld33-highscores/index.html	/^  <link rel="manifest" href="\/manifest.json">$/;"	function	line:23
+meta	/home/fer/Downloads/ld33-highscores/index.html	/^  <meta name="msapplication-TileColor" content="#ffffff">$/;"	function	line:24
+meta	/home/fer/Downloads/ld33-highscores/index.html	/^  <meta name="msapplication-TileImage" content=".\/ms-icon-144x144.png">$/;"	function	line:25
+meta	/home/fer/Downloads/ld33-highscores/index.html	/^  <meta name="theme-color" content="#ffffff">$/;"	function	line:26
+link	/home/fer/Downloads/ld33-highscores/index.html	/^  <link rel="stylesheet" href="css\/styles.css">$/;"	function	line:29
+script	/home/fer/Downloads/ld33-highscores/index.html	/^  <script src="\/\/code.jquery.com\/jquery-1.11.3.min.js"><\/script>$/;"	function	line:31
+script	/home/fer/Downloads/ld33-highscores/index.html	/^  <script type="text\/javascript" src="http:\/\/www.parsecdn.com\/js\/parse-1.5.0.min.js"><\/script>$/;"	function	line:32
+link	/home/fer/Downloads/ld33-highscores/index.html	/^  <link rel="stylesheet" href="https:\/\/maxcdn.bootstrapcdn.com\/bootstrap\/3.3.5\/css\/bootstrap.min.css">$/;"	function	line:34
+script	/home/fer/Downloads/ld33-highscores/index.html	/^  <script src="https:\/\/maxcdn.bootstrapcdn.com\/bootstrap\/3.3.5\/js\/bootstrap.min.js"><\/script>$/;"	function	line:35
+script	/home/fer/Downloads/ld33-highscores/index.html	/^  <script src="parse_key.js"><\/script>$/;"	function	line:36
+script	/home/fer/Downloads/ld33-highscores/index.html	/^  <script src="functions.js"><\/script>$/;"	function	line:37
+body	/home/fer/Downloads/ld33-highscores/index.html	/^<body>$/;"	function	line:40
+div	/home/fer/Downloads/ld33-highscores/index.html	/^  <div class="container">$/;"	function	line:41
+div	/home/fer/Downloads/ld33-highscores/index.html	/^    <div class="row">$/;"	function	line:42
+div	/home/fer/Downloads/ld33-highscores/index.html	/^      <div class="col-md-8">$/;"	function	line:43
+ul	/home/fer/Downloads/ld33-highscores/index.html	/^        <ul class="nav nav-tabs" role="tablist">$/;"	function	line:44
+li	/home/fer/Downloads/ld33-highscores/index.html	/^          <li role="presentation" class="active"><a href="#tscore" role="tab" data-toggle="tab">Top Score<\/a><\/li>$/;"	function	line:45
+li	/home/fer/Downloads/ld33-highscores/index.html	/^          <li role="presentation"><a href="#ticecream" role="tab" data-toggle="tab">Top Ice Creams<\/a><\/li>$/;"	function	line:46
+li	/home/fer/Downloads/ld33-highscores/index.html	/^          <li role="presentation"><a href="#tdestroyed" role="tab" data-toggle="tab">Top Destruction<\/a><\/li>$/;"	function	line:47
+li	/home/fer/Downloads/ld33-highscores/index.html	/^          <li role="presentation"><a href="#tlast" role="tab" data-toggle="tab">Last Scores<\/a><\/li>$/;"	function	line:48
+div	/home/fer/Downloads/ld33-highscores/index.html	/^        <div class="tab-content">$/;"	function	line:50
+div	/home/fer/Downloads/ld33-highscores/index.html	/^          <div role="tabpanel" class="tab-pane active" id="tscore">$/;"	function	line:51
+table	/home/fer/Downloads/ld33-highscores/index.html	/^            <table id='scores' class="table">$/;"	function	line:52
+thead	/home/fer/Downloads/ld33-highscores/index.html	/^              <thead>$/;"	function	line:53
+tr	/home/fer/Downloads/ld33-highscores/index.html	/^                <tr>$/;"	function	line:54
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                  <th>#<\/th>$/;"	function	line:55
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                  <th>Player Name<\/th>$/;"	function	line:56
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                  <th>Score<\/th>$/;"	function	line:57
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                  <th>Ice cream<\/th>$/;"	function	line:58
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                  <th>Destroyed<\/th>$/;"	function	line:59
+div	/home/fer/Downloads/ld33-highscores/index.html	/^            <div id="yourScore" style="display:none">$/;"	function	line:63
+h	/home/fer/Downloads/ld33-highscores/index.html	/^              <h3>Your Score<\/h3>$/;"	function	line:64
+table	/home/fer/Downloads/ld33-highscores/index.html	/^              <table id='yours' class="table">$/;"	function	line:65
+thead	/home/fer/Downloads/ld33-highscores/index.html	/^                <thead>$/;"	function	line:66
+tr	/home/fer/Downloads/ld33-highscores/index.html	/^                  <tr>$/;"	function	line:67
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                    <th>#<\/th>$/;"	function	line:68
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                    <th>Player Name<\/th>$/;"	function	line:69
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                    <th>Score<\/th>$/;"	function	line:70
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                    <th>Ice cream<\/th>$/;"	function	line:71
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                    <th>Destroyed<\/th>$/;"	function	line:72
+div	/home/fer/Downloads/ld33-highscores/index.html	/^          <div role="tabpanel" class="tab-pane" id="ticecream">$/;"	function	line:78
+table	/home/fer/Downloads/ld33-highscores/index.html	/^            <table id='icecreamScores' class="table">$/;"	function	line:79
+thead	/home/fer/Downloads/ld33-highscores/index.html	/^              <thead>$/;"	function	line:80
+tr	/home/fer/Downloads/ld33-highscores/index.html	/^                <tr>$/;"	function	line:81
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                  <th>#<\/th>$/;"	function	line:82
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                  <th>Player Name<\/th>$/;"	function	line:83
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                  <th>Score<\/th>$/;"	function	line:84
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                  <th>Ice cream<\/th>$/;"	function	line:85
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                  <th>Destroyed<\/th>$/;"	function	line:86
+div	/home/fer/Downloads/ld33-highscores/index.html	/^            <div id="yourIcecreamScore" style="display:none">$/;"	function	line:90
+h	/home/fer/Downloads/ld33-highscores/index.html	/^              <h3>Your Score<\/h3>$/;"	function	line:91
+table	/home/fer/Downloads/ld33-highscores/index.html	/^              <table id='yoursIcecream' class="table">$/;"	function	line:92
+thead	/home/fer/Downloads/ld33-highscores/index.html	/^                <thead>$/;"	function	line:93
+tr	/home/fer/Downloads/ld33-highscores/index.html	/^                  <tr>$/;"	function	line:94
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                    <th>#<\/th>$/;"	function	line:95
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                    <th>Player Name<\/th>$/;"	function	line:96
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                    <th>Score<\/th>$/;"	function	line:97
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                    <th>Ice cream<\/th>$/;"	function	line:98
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                    <th>Destroyed<\/th>$/;"	function	line:99
+div	/home/fer/Downloads/ld33-highscores/index.html	/^          <div role="tabpanel" class="tab-pane" id="tdestroyed">$/;"	function	line:105
+table	/home/fer/Downloads/ld33-highscores/index.html	/^            <table id='destroyScores' class="table">$/;"	function	line:106
+thead	/home/fer/Downloads/ld33-highscores/index.html	/^              <thead>$/;"	function	line:107
+tr	/home/fer/Downloads/ld33-highscores/index.html	/^                <tr>$/;"	function	line:108
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                  <th>#<\/th>$/;"	function	line:109
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                  <th>Player Name<\/th>$/;"	function	line:110
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                  <th>Score<\/th>$/;"	function	line:111
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                  <th>Ice cream<\/th>$/;"	function	line:112
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                  <th>Destroyed<\/th>$/;"	function	line:113
+div	/home/fer/Downloads/ld33-highscores/index.html	/^            <div id="yourDestroyedScore" style="display:none">$/;"	function	line:117
+h	/home/fer/Downloads/ld33-highscores/index.html	/^              <h3>Your Score<\/h3>$/;"	function	line:118
+table	/home/fer/Downloads/ld33-highscores/index.html	/^              <table id='yoursDestroyed' class="table">$/;"	function	line:119
+thead	/home/fer/Downloads/ld33-highscores/index.html	/^                <thead>$/;"	function	line:120
+tr	/home/fer/Downloads/ld33-highscores/index.html	/^                  <tr>$/;"	function	line:121
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                    <th>#<\/th>$/;"	function	line:122
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                    <th>Player Name<\/th>$/;"	function	line:123
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                    <th>Score<\/th>$/;"	function	line:124
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                    <th>Ice cream<\/th>$/;"	function	line:125
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                    <th>Destroyed<\/th>$/;"	function	line:126
+div	/home/fer/Downloads/ld33-highscores/index.html	/^          <div role="tabpanel" class="tab-pane" id="tlast">$/;"	function	line:132
+table	/home/fer/Downloads/ld33-highscores/index.html	/^            <table id='lastScores' class="table">$/;"	function	line:133
+thead	/home/fer/Downloads/ld33-highscores/index.html	/^              <thead>$/;"	function	line:134
+tr	/home/fer/Downloads/ld33-highscores/index.html	/^                <tr>$/;"	function	line:135
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                  <th>#<\/th>$/;"	function	line:136
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                  <th>Player Name<\/th>$/;"	function	line:137
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                  <th>Score<\/th>$/;"	function	line:138
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                  <th>Ice cream<\/th>$/;"	function	line:139
+th	/home/fer/Downloads/ld33-highscores/index.html	/^                  <th>Destroyed<\/th>$/;"	function	line:140
+div	/home/fer/Downloads/ld33-highscores/index.html	/^      <div class="col-md-4 lateral">$/;"	function	line:150
+div	/home/fer/Downloads/ld33-highscores/index.html	/^        <div class="logo">$/;"	function	line:151
+img	/home/fer/Downloads/ld33-highscores/index.html	/^          <img src="logo.png">$/;"	function	line:152
+div	/home/fer/Downloads/ld33-highscores/index.html	/^        <div class="row" style="margin-top:1em">$/;"	function	line:154
+div	/home/fer/Downloads/ld33-highscores/index.html	/^          <div class="col-md-6 col-xs-6">$/;"	function	line:155
+a	/home/fer/Downloads/ld33-highscores/index.html	/^            <a href="http:\/\/risingpixel.itch.io\/notzilla-icecream-vendor" class="btn btn-default">Play!<\/a>$/;"	function	line:156
+div	/home/fer/Downloads/ld33-highscores/index.html	/^          <div class="col-md-6 col-xs-6">$/;"	function	line:158
+a	/home/fer/Downloads/ld33-highscores/index.html	/^            <a href="https:\/\/twitter.com\/intent\/tweet?text=play%20Notzilla%20Ice%20Cream%20vendor!&url=http%3A%2F%2Frisingpixel.itch.io%2Fnotzilla-icecream-vendor" class="btn btn-default">Share on Twitter!<\/a>$/;"	function	line:159
+div	/home/fer/Downloads/ld33-highscores/index.html	/^        <div class="row" style="margin:1em 0 1em">$/;"	function	line:162
+div	/home/fer/Downloads/ld33-highscores/index.html	/^          <div class="col-md-6 col-xs-6">$/;"	function	line:163
+div	/home/fer/Downloads/ld33-highscores/index.html	/^            <div class="btn btn-default total">Total Ice Cream$/;"	function	line:164
+span	/home/fer/Downloads/ld33-highscores/index.html	/^              <span id='totalIceCream'><\/span>$/;"	function	line:165
+div	/home/fer/Downloads/ld33-highscores/index.html	/^          <div class="col-md-6 col-xs-6">$/;"	function	line:168
+div	/home/fer/Downloads/ld33-highscores/index.html	/^            <div id="totalDestroyedBox" class="btn btn-default total">Total destroyed$/;"	function	line:169
+span	/home/fer/Downloads/ld33-highscores/index.html	/^              <span id='totalDestroyed'><\/span>$/;"	function	line:170
+script	/home/fer/Downloads/ld33-highscores/index.html	/^  <script type="text\/javascript">$/;"	function	line:179

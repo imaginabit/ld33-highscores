@@ -2,11 +2,43 @@
 <head>
   <meta charset="utf-8">
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+  <script src="parse_key.js"></script>
+
   <script src="sendscore.js"></script>
-  <script type="text/javascript">
-    sendscore('Fernando',9999999,213232,2121);
-    sendscore('Roberto',999999,21332,121);
-    sendscore('Jonay',9999999,213232,2121);
-  </script>
 </head>
+
 <body>
+    <form id="f">
+        name
+        <input type="text" id='name' name='name'>
+        <br>
+        score
+        <input type="text" id='score' name='score'>
+        <br>
+        icecream
+        <input type="text" id='icecream' name='icecream'>
+        <br>
+        destroyed
+        <input type="text" id='destroyed' name='destroyed'>
+        <br>
+        <input id="submit" type="submit">
+    </form>
+  <script type="text/javascript">
+  $(function() {
+    $('#submit').click(function(e){
+        e.preventDefault();
+        name = $('#name').val();
+        score = $('#score').val();
+        icecream = $('#icecream').val();
+        destroyed = $('#destroyed').val();
+        console.log('name: '+name +' s: '+ score +' i: '+ icecream +' d: '+destroyed);
+        sendscore(
+            $('#name').val(),
+            $('#score').val(),
+            $('#icecream').val(),
+            $('#destroyed').val()
+        );
+    });
+  });
+  </script>

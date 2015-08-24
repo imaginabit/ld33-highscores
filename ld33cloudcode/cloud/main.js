@@ -1,15 +1,28 @@
 //
-// Parse.Cloud.define("totalIceCream", function(request, response) {
+// Parse.Cloud.define("ranking", function(request, response) {
 //   // query.equalTo("playername", request.params.playername);
+//   scoreid = request.params.scoreid;
 //   var query = new Parse.Query("GameScore");
 //   query.limit(1000);
 //   query.find({
 //     success: function(results) {
 //       var sum = 0;
 //       for (var i = 0; i < results.length; ++i) {
-//         sum += results[i].get("icecream");
+//         row = results[i];
+//         if (row.id == scoreid ){
+//           data = Array();
+//           for (var j= -4; j < 5; ++j) {
+//             n = i + j;
+//             data.push( { results[n].id,
+//               results[n].get("playername"),
+//               results[n].get("score"),
+//               results[n].get("icecream"),
+//               results[n].get("destroyed"),
+//             });
+//           }
+//         }
 //       }
-//       response.success(sum);
+//       response.success(data);
 //     },
 //     error: function() {
 //       response.error("lookup failed");

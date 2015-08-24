@@ -47,9 +47,8 @@ body {
 
 }
 
-#totalDestroyedBox{
-    display: block;
-    float: right;
+.table th{
+    text-align: center;
 }
 
 
@@ -58,5 +57,23 @@ body{
 }
 
 .lateral{
-    padding-top: 37em;
+    padding-top: 2em;
+}
+.logo{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.table{
+  position: relative;
+}
+
+.loading{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 10em;
+  padding-top: 4em;
+  background-color: rgba(0,0,0,0.3);
 }
